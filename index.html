@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dea Silver</title>
+    <link rel="icon" href="img/DS3.jpg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/DS.jpg" alt="Dea Silver Logo" class="logo-img">
+            Dea Silver
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="beranda">
+            <div class="welcome-message">
+                <h1>
+                    <img src="img/DS.jpg" alt="Welcome Image" class="welcome-img">
+                    Selamat Datang di Dea Silver
+                </h1>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/DE.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/perhiasan.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/perhisan3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section id="tentang" class="about-section">
+            <h2 class="about-title"></h2>
+            <div class="about-content">
+                <img src="img/dea silver.jpg" alt="Toko Dea Silver">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Tentang Dea Silver</h3>
+                    <p>Di Dea Silver, visi kami adalah menciptakan tempat di mana setiap orang dapat menikmati perhiasan perak berkualitas tinggi dalam suasana yang nyaman dan bersahabat. Misi kami adalah menyediakan perhiasan perak terbaik dari bahan berkualitas, melayani setiap pembeli dengan ramah dan pelayanan yang terbaik, memberikan model-model perhiasan terbaru dan terbaik agar pelanggan puas.</p>
+                    <ul>
+                        <li><strong>Cincin:</strong> Koleksi cincin indah yang sesuai untuk berbagai kesempatan.</li>
+                        <li><strong>Kalung:</strong> Perpaduan sempurna antara desain klasik dan modern.</li>
+                        <li><strong>Gelang:</strong> Beragam pilihan gelang yang elegan dan modis.</li>
+                        <li><strong>Anting:</strong> Anting dengan berbagai desain unik dan menawan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="jenis-jenis-perhiasan" class="jewelry-type">
+            <h2 class="jenis-perhiasan-title">Jenis Jenis Perhiasan</h2>
+            <img src="img/cincin.jpg" alt="Cincin">
+            <img src="img/kalung.jpg" alt="Kalung">
+            <img src="img/gelang.jpg" alt="Gelang">
+            <img src="img/anting1.jpg" alt="Anting">
+            <img src="img/kotak.jpg" alt="kotak perhiasan">
+        </section>
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <div class="kontak-wrapper">
+                <div class="kontak-item">
+                    <div class="kontak-icon">
+                        <img src="img/WhatsApp.jpg" alt="Phone Icon">
+                    </div>
+                    <p>:+62 857-2202-3050</p>
+                </div>
+                <div class="kontak-item">
+                    <div class="kontak-icon">
+                        <img src="img/email.jpg" alt="Email Icon">
+                    </div>
+                    <p>Email: dearestu14@gmail.com</p>
+                </div>
+                <div class="kontak-item">
+                    <div class="kontak-icon">
+                        <img src="img/iseng.jpg" alt="Location Icon">
+                    </div>
+                    <p>Pasar Anyar Cikampek Blok C 29, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</p>
+                </div>
+            </div>
+            <div class="map-and-form">
+                <div id="map" class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.883267838666!2d107.46018137499196!3d-6.4090351935817464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjQnMzIuNSJTIDEwN8KwMjcnNDUuOSJF!5e0!3m2!1sid!2sid!4v1716952613095!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/moqgoqae" method="post">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2></h2>
+            <div class="about-wrapper">
+                <div class="about-item">
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, .main-nav a, .contact-form button {
+            font-family: 'Playfair Display', serif;
+        }
+        .about-title, .about-subtitle {
+            font-family: 'Playfair Display', serif;
+        }
+        .about-text {
+            font-family: 'Poppins', sans-serif;
+        }
+        .map-and-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px; /* Add margin top to create space between contact section and map */
+        }
+        .map {
+            flex: 1;
+            height: 450px;
+            margin-top: 20px; /* Add margin top to create space below the map */
+        }
+        .contact-form {
+            flex: 1;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-top: 10px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #160606;
+            border: none;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        /* Additional styling for the header and logo */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .welcome-message h1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .welcome-img {
+            height: 40px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .footer-about, .footer-info, .footer-instagram {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        .instagram-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .instagram-images img {
+            width: 200px; /* Menambah lebar gambar */
+            height: 200px; /* Menambah tinggi gambar */
+            object-fit: cover;
+            display: block;
+            margin: 0 auto; /* Memusatkan gambar secara horizontal */
+        }
+    </style>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Dea Silver</h2>
+                <p>
+                    Di Dea Silver, visi kami adalah menciptakan tempat di mana setiap orang dapat pelayan yang baik dalam suasana yang nyaman dan bersahabat. Misi kami adalah memberikan pelanggan kepuasan akan pilihan dan model perhiasan yang menarik, menyediakan berbagi model perhiasan kelasik hingga moderen dan kekinian.
+                </p>
+            </div>
+            <div class="footer-instagram">
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/deasilver__/" target="_blank">@deasilver_</a></p>
+                <div class="instagram-images">
+                    <img src="img/ig2.jpg" alt="Instagram Image 2" class="instagram-img-large">
+                </div>
+            </div>
+            <div class="footer-info">
+                <h3>Informasi tentang Pembuat web</h3>
+                <p>Nama: Teguh Muhammad Nurhakim</p>
+                <p>Kontak: <a href="tel:+6285720498439">+62 857-8233-6169</a></p>
+                <p>Email: <a href="mailto:teguhmuhammadn123@gmail.com">teguhmuhammadn123@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/tghm_n/" target="_blank">@tghm_n</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright Dea Silver. All Rights Reserved</p>
+            <p>Desain by <a href="https://example.com">Teguh Muhammad</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
